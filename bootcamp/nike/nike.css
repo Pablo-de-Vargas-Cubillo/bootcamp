@@ -1,0 +1,12 @@
+.imagen{
+    width:235px;
+    height: 235px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.galery{
+    width: 33,3%;
+}

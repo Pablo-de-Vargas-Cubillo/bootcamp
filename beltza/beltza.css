@@ -1,0 +1,24 @@
+.container{
+    margin-left: 80px;
+}
+.logo-beltza{
+    height: 100px;
+}
+.nav-1{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+.nav-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+svg.kiwi {
+    fill: #94d31b;
+}

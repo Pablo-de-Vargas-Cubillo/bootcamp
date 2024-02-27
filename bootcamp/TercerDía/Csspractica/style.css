@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.header{
+    width: 100vw;
+    height: 100vw;
+}
+.header_nav{
+    width: 100vw;
+    height: 10vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.header_nav-anchors{
+    height: 100%;
+    width:30%;
+    margin-left: 120px;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.header_nav--icons{
+    margin-right: 120px;
+    width: 10%;
+    height: 100%;
+    background-color: red;
+}
