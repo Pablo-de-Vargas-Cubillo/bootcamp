@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .cuadrado1{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+   
+    </style>
+</head>
+<body>
+    <script>
+        //pedimos un numero por prompt y pintamos cuadrados despendiendo el numero recibido
+        // Dentro del div debe aparecer el número de orden.
+        const num= Number(prompt('cuantos cuadrados quieres'));
+        for (let i = 1; i <= num; i++){
+
+            document.write(`<div class="cuadrado1">${i}</div>`)}
+    </script>
+</body>
+</html>
