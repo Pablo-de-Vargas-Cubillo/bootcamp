@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caja{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="blue">Azul</button>
+    <button id="green">Verde</button>
+    <button id="red">Rojo</button>
+    <div class="caja"></div>
+    <script>
+        const caja = document.querySelector('.caja')
+
+        const botones = document.querySelectorAll('button')
+        for(boton of botones){
+            boton.addEventListener('click', cargarColor)//cargaColor no tiene parntesis porque es un call back (llamada de otra función)
+        }
+        /*
+        function cargarColor(event){
+            if(event.target.textContent ==='azul'){
+                caja.style.backgroundColor='blue'
+            }else if(event.target.textContent === 'verde'){
+                caja.style.backgroundColor = 'green'
+            }else if (event.target.textContent === 'rojo') {
+                caja.style.backgroundColor = 'red'}
+
+        }
+        */
+
+        function cargarColor(event){
+            caja.style.backgroundColor = event.target.id        //tenemos que añadirle id a las cajas
+        }
+        //apuntes ej: star wars
+const drawCharacters = (charactersMapeados)
+        const pickinput = (personajesMapeados) => {
+                    const imput$$ =
+                    document.querySelector("imput"); console.log(input$$.value)
+            
+            imput$$.addEventListener("imput", () =>
+            searchCharacters())}
+        const searchCharacter = (filtro,array)={
+array.filter((character)=>character.nombre.toLowerCase().includes(filtro.toLowerCase()))}
+    </script>
+</body>
+</html>

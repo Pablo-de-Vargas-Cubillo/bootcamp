@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const sumar = function (num1, num2){
+            return num1 + num2;
+        }
+
+        sumar(4,5);
+
+        //arrow function
+        
+        const multiplicar = (num1,num2) => {
+            return num1 * num2;
+        }
+
+        //Si en una funcion arrow solo disponemos de una sentenca y ademas es la sentencia de return, podmos definir la funcion de la siguiente manera
+        const dividir = (num1, num2) => num1 / num2;
+
+        //SI en una funcion arrow solo tengo una parametro, puedo quitar los parentesis:
+
+        const saludar = nombre => `Hola ${nombre}`;
+        saludar('mario');
+
+        console.log(mensaje);
+        
+    </script>
+</body>
+</html>

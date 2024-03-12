@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li onclick="cambiarColor('blue')">azul</li>
+    <li onclick="cambiarColor('lightgreen')">verde</li>
+    <li onclick="cambiarColor('tomato')">rojo</li>
+</ul>
+<script>
+
+    const body = document.body;
+    function cambiarColor(color){
+        body.style.backgroundColor = color;
+    }
+
+</script>
+</body>
+</html>

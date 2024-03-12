@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        //Find busca dentro de un array un elemento que cumpla cierta condicion. Find devuelve un unico elemento. El primero que encuentre que cumpla la condicion.
+        //Find ejecuta, espera un valor que coincida la condicion establecida.
+
+    const frutas = ['manzana', 'pera', 'platano', 'uvas']; //Array simple 1.
+
+    const frutaBuscada = frutas.find((fruta) => fruta === 'remolacha'); 
+
+    const nombres = ['Ana', 'Pepe', 'Maria', 'Lucia']; //Array simple 2.
+
+    const nombreLargo = nombres.find((nombre) => nombre[0]=== 'M' ) 
+
+    const alumnos = [{ nombre: 'Juan', nota: 3 },
+         { nombre: 'Mario', nota: 4 },
+         { nombre: 'Ana', nota: 6 },
+         { nombre: 'Darwin', nota: 8 },
+         { nombre: 'Pedro', nota: 3 },
+         { nombre: 'Lucas', nota: 3 },
+         { nombre: 'María', nota: 3 },
+         { nombre: 'Cristina', nota: 3 },
+         { nombre: 'Edurne', nota: 3 },
+         { nombre: 'Pablo', nota: 3 },
+         { nombre: 'Juan', nota: 3 },] //Array complejo 1.
+
+            const primerAprobado = alumnos.find((alumno) => alumno.nota >= 5)
+           
+            //-findIndex: SOLO PARA ARRAYS COMPLEJOS, busca un elemento que cumpla una condicion y me devuelve la posicion del primer elemento que la cumpla. Si no lo encuentra me devuelve -1
+            //-PARA ARRAYS SIMPLES el metodo se llama indexof().
+             
+                let posicion = frutas.indexOf('pera'); //1
+
+            //La posicion del alumno 'Darwin'
+
+                let posicion2 = alumnos.findIndex((alumno) => alumno.nombre === 'Darwin') //2
+
+             //Buscar elementos en el array que cumpla una condición, devuelve todos los elementos que cumpla la condición (array).
+                function buscarFrutasPorLongitud(longitud) {
+                    let frutaBuscada = frutas.filter((fruta) => fruta.length <= longitud)
+                    return frutaBuscada
+                }
+
+                
+
+
+    </script>
+
+</body>
+
+</html>

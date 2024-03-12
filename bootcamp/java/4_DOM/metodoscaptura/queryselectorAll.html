@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <script>
+//vamos a capturar las 5 cajas y les añadiremos un background ancho y alto
+
+const cajas = document.querySelectorAll('caja')
+for (let caja of cajas){
+    caja.style.width = '200px'
+    caja.style.heigth = '200px'
+    caja.style.margin = '10px'
+    caja.style.backgroundColor = 'tomato'
+    caja.textContent= count
+    caja.style.color= 'white'
+    count +=10
+}
+
+
+    </script>
+</body>
+</html>

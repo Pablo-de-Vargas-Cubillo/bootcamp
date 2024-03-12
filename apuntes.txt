@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Estrcutura 1 ejercicio 1</title>
+	</head>
+	<body>
+		 <h1>Las aficiones de un Upgrader</h1>
+		 <ul> 
+		  <li>Programar</li>
+		  <li>Programar</li>
+			<li>Programar</li>
+		</ul>
+	</body>
+</html>
+
+<form action="/">
+  <label for="firstName">
+    <p>Introduce tu nombre de pila</p>
+    <input name="firstName" type="text">
+  </label>
+  <label for="lastName">
+    <p>Introduce tus apellidos</p>
+    <input name="lastName" type="text">
+  </label>
+</form>
+
+<section>
+  <h2>Noticias de Actualidad</h2>
+  <article>
+    <h3>¡La tecnologia dispara el éxito de la educación online!</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas
+      ac leo lacinia maximus. Etiam id eleifend lorem. Donec quis leo vel
+      orci elementum finibus.
+    </p>
+  </article>
+
+elementos html: ELEMENTOS BLOCK
+<address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure><footer><form>
+<h1>-<h6><header><hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video>
+
+elementos html: ELEMENTOS INLINE
+<a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q>
+<samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>
+----TABLAS:
+<table>
+	<thead><tr>
+			<th>coches</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>ford</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td>total</td>
+		</tr>
+</table>
+
+----FORMULARIOS
+<form>
+	<fieldset>
+		<leguend>info basica</leyend>
+		<label>
+			fecha
+			<imput type="date" />
+		</label>
+		<label for="text">
+			Nombre:
+		</label>
+		<imput id="text" type="text" />
+		<imput type="number" />
+		<imput type="file" />
+		<imput type="checkbox" />
+		<imput type="radio" />
+		<imput type="password" />
+		<imput type="reset" />
+		<textarea></textarea>
+		<button>Enviar</button>	
+		<select>
+      <option>opcion 1</option>
+      <option>opcion 2</option>
+    </select>
+	</fieldset>
+</form>
+---CSSS:
+---DISPLAYS:
+inline: Valor por defecto. Expone un elemento como elemento en línea. No admite width, height ni margin.
+
+block: Expone un elemento como elemento de bloque. Este elemento ocupará todo el ancho posible.
+
+inline-block: Su comportamiento es una mezcla de los dos anteriores, se muestran en la misma línea (respetando el flujo) todos los elementos y además, acepta las propiedades width, height y margin.
+
+none: El elemento no se mostrará ni tendrá́ efecto alguno en la estructura de la web.
+
+flex: Expone un elemento como un elemento de bloque de tipo flexible, generalmente nos servirá para colocar elementos en una misma fila o columna. Esto lo veremos en detalle más adelante :  
+
+---POSITION:
+position relative (caja de coordenadas padre): establece un eje de coodrdenadas.
+position absolute: mueve los elementos hijos dentro de la caja padre (relative).
+
+translate:-50% -50%
+---SVG:
+<svg width="24px" height="24px" viewBox="0 0 24 24" id="_24x24_On_Light_Google" data-name="24x24/On Light/Google" xmlns="<http://www.w3.org/2000/svg>" xmlns:xlink="<http://www.w3.org/1999/xlink>">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="a" d="M17.791,7.364H9.209v3.477h4.94c-.46,2.209-2.386,3.477-4.94,3.477A5.37,5.37,0,0,1,3.767,9,5.442,5.442,0,0,1,12.6,4.868L15.279,2.25A9.29,9.29,0,0,0,9.209,0,9.08,9.08,0,0,0,0,9a9.08,9.08,0,0,0,9.209,9A8.586,8.586,0,0,0,18,9,7.306,7.306,0,0,0,17.791,7.364Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="view-box" width="24" height="24" fill="none"/>
+  <g id="Logo" transform="translate(3 3)">
+    <g id="Clipped">
+      <path id="a-5" data-name="a" d="M17.791,7.364H9.209v3.477h4.94c-.46,2.209-2.386,3.477-4.94,3.477A5.37,5.37,0,0,1,3.767,9,5.442,5.442,0,0,1,12.6,4.868L15.279,2.25A9.29,9.29,0,0,0,9.209,0,9.08,9.08,0,0,0,0,9a9.08,9.08,0,0,0,9.209,9A8.586,8.586,0,0,0,18,9,7.306,7.306,0,0,0,17.791,7.364Z" fill="none"/>
+      <g id="Clipped-2" data-name="Clipped" clip-path="url(#clip-path)">
+        <path id="Path" d="M0,10.636V0L7.116,5.318Z" transform="translate(-0.837 3.682)" fill="#fbbc05"/>
+      </g>
+    </g>
+    <g id="Clipped-3" data-name="Clipped">
+      <path id="a-6" data-name="a" d="M17.791,7.364H9.209v3.477h4.94c-.46,2.209-2.386,3.477-4.94,3.477A5.37,5.37,0,0,1,3.767,9,5.442,5.442,0,0,1,12.6,4.868L15.279,2.25A9.29,9.29,0,0,0,9.209,0,9.08,9.08,0,0,0,0,9a9.08,9.08,0,0,0,9.209,9A8.586,8.586,0,0,0,18,9,7.306,7.306,0,0,0,17.791,7.364Z" fill="none"/>
+      <g id="Clipped-4" data-name="Clipped" clip-path="url(#clip-path)">
+        <path id="Path-2" data-name="Path" d="M0,4.5,7.116,9.818l2.93-2.5,10.047-1.6V0H0Z" transform="translate(-0.837 -0.818)" fill="#ea4335"/>
+      </g>
+    </g>
+    <g id="Clipped-5" data-name="Clipped">
+      <path id="a-7" data-name="a" d="M17.791,7.364H9.209v3.477h4.94c-.46,2.209-2.386,3.477-4.94,3.477A5.37,5.37,0,0,1,3.767,9,5.442,5.442,0,0,1,12.6,4.868L15.279,2.25A9.29,9.29,0,0,0,9.209,0,9.08,9.08,0,0,0,0,9a9.08,9.08,0,0,0,9.209,9A8.586,8.586,0,0,0,18,9,7.306,7.306,0,0,0,17.791,7.364Z" fill="none"/>
+      <g id="Clipped-6" data-name="Clipped" clip-path="url(#clip-path)">
+        <path id="Path-3" data-name="Path" d="M0,15.136,12.558,5.727l3.307.409L20.093,0V19.636H0Z" transform="translate(-0.837 -0.818)" fill="#34a853"/>
+      </g>
+    </g>
+    <g id="Clipped-7" data-name="Clipped">
+      <path id="a-8" data-name="a" d="M17.791,7.364H9.209v3.477h4.94c-.46,2.209-2.386,3.477-4.94,3.477A5.37,5.37,0,0,1,3.767,9,5.442,5.442,0,0,1,12.6,4.868L15.279,2.25A9.29,9.29,0,0,0,9.209,0,9.08,9.08,0,0,0,0,9a9.08,9.08,0,0,0,9.209,9A8.586,8.586,0,0,0,18,9,7.306,7.306,0,0,0,17.791,7.364Z" fill="none"/>
+      <g id="Clipped-8" data-name="Clipped" clip-path="url(#clip-path)">
+        <path id="Path-4" data-name="Path" d="M14.651,15.136,1.674,5.318,0,4.091,14.651,0Z" transform="translate(4.605 3.682)" fill="#4285f4"/>
+      </g>
+    </g>
+  </g>
+</svg>
+-figuras animadas
+<rect id="cool_shape" ...="">
+  <animate xlink:href="#cool_shape" ...=""></animate>
+</rect>
+--- no se que es Esto
+<p>Hola este es mi svg:</p>
+        <svg ...>
+            <ellipse class="ground"  />
+            <path class="kiwi" <circle cx="25" cy="75" r="20"/>  />
+        </svg>
+
+
+
+
+
+
+
+   
+----BASES DE DATOS----
+para crear en la terminal una base de datos, documento(profesores), objeto(nombre), llave(Pablo)
+use baseDeDatos
+>db.createColection("profesores").
+>db.baseDeDatos.insertOne({nombre:'Pablo', edad: 19, especialidad: "BBDD"})
+//devolvera un boolean y un ID
+
+.....Propiedades:
+>db.profesores.find()
+Se utiliza la ID para trackear elementos de nuestras bases de datos 
+
+kjsdksjd.ObjectId("el id del objeto")   //devuelve los elementos que tiene
+
+>db.profesores.insert([{nombre:, edad:, especialidad}, {nombre, edad, especialidad:}])
+
+ej.
+db.comunidades.deleteMany({edad:24}
+              *TTTTTTTTT*
+  {casas: {$lt: 2}, codigoPostal:20543})       ////////////Elimina todos los camposque cumplan las condiciones.
+
+
+ej.
+db.colection.updateOne({nombre:"Paola"}, {$set:ciudad:lugo}, {telefono:"2334455667"})   //busca paula y le actualiza la ciudad y el telefono
+
+
+
+ej.
+db.Amigos.updateOne({nombre:"Carlos"}, 
+{$set:{Edad : "29"}})
+
+$set:
+$inc: sumar a los llaves delarray ej.($inc:{edad: 2000})
+
+nos actualiza el documento edad siendo ahora la edad antigua mas 2000 años.
+
+
+poner ({x:y}, {nombre:0})     //no se muestra en pantalla el nombre--------el 0 es false y el 1 true.
+
+
+
+
+
+
+----------------NODE JS---------------------
+
+// 1. IMPORTAR LIBRERIAS O VARIABLES EXTERNAS
+const express = require('express');
+// 2. CONFIGURACIÓN DE LA APLICACIÓN
+const PORT = 3000;
+const app = express();
+
+// 3. ENDPOINTS
+app.get('/bebidas', (request, response) => {
+//request -> comanda del camarero
+const bebida = request.params.bebida;
+if (typeof bebida === 'string' || bebida instanceof String) {
+//response -> lo que le devuelvo al cliente
+response.status(200).json({
+status: 200,
+message: `Gracias, aqui tiene su ${bebida}`
+})
+} else {
+response.status(404).json({
+status: 404,
+message: `Lo que ha pedido (${bebida}) no es una bebida`
+})
+}
+});
+// 4. MANEJO DE ERRORES
+// 5. FUNCIÓN DE INICIO
+app.listen(PORT, () => {
+console.log(`app running in port ${PORT}`);
+});
+
+
+
+//controlador de una base de datos
+const mongoose = require('mongoose');
+
+const pass = 'mongodb+srv://dev3pgonzalez:6dUwAq3As4st6hge@cluster0.navam8i.mongodb.net/albums?retryWrites=true&w=majority';
+
+const connectMongo = async () => {
+    try {
+        const conn = await mongoose.connect(pass);
+        console.log('INFO: Conexión a BD correcta:', conn.connection.name)
+    } catch (error) {
+        console.log('ERROR: (f connectMongo) ->', error.message);
+    }
+}
+
+module.exports = { connectMongo };
+
+

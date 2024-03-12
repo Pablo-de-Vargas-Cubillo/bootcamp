@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .coche{
+            max-width: 100px;
+            transform: rotateZ(180deg);
+            transition:0.5s;
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="irIzq()">Izquierda</button>
+    <button onclick="irDer()">Derecha</button>
+    <hr>
+    <div class="coche">
+        <img src="https://www.deividart.com/libres/zycars-coche_camaro-2.png" alt ="">
+    </div>
+    <script>
+
+        const coche = document.querySelector('.coche')
+        let velocidad = 40;
+
+        function irIzq(){
+            velocidad -= 40;
+            coche.style.marginLeft = `${velocidad}px`
+             coche.style.transform = `rotateZ(0deg)`
+        }
+        function irDer(){
+            velocidad += 40;
+            coche.style.marginLeft = `${velocidad}px`
+            coche.style.transform = `rotateZ(180deg)`
+        }
+
+
+    </script>
+
+
+</body>
+</html>

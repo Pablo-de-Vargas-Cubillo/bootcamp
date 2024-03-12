@@ -1,0 +1,17 @@
+.logo{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.logo-img{
+    height: 13vh;
+}
+.nav1{
+    height: 20%;
+}
+.ul-b{
+    padding-left: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        
+}

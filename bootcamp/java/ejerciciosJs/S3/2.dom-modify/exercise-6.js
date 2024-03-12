@@ -1,0 +1,16 @@
+const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
+const ul = document.createElement('ul');
+ul.textContent = (apps);
+document.body.appendChild(ul);
+const li = document.createElement('li');
+li.textContent = (apps[0]);
+document.body.appendChild(li);
+const li = document.createElement('li');
+li.textContent = (apps[1]);
+document.body.appendChild(li);
+const li = document.createElement('li');
+li.textContent = (apps[3]);
+document.body.appendChild(li);
+const li = document.createElement('li');
+li.textContent = (apps[4]);
+document.body.appendChild(li);

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section id="poligonos"><div></div></section>
+
+    <script>
+
+    const arrayPoligonos = [
+        { texto: 'Uno', color: 'blue', width: "100px", height: '100px' },
+        { texto: 'Dos', color: 'red', width: "200px", height: '150px' },
+        { texto: 'Tres', color: 'green', width: "50px", height: '20px' }]
+
+        const sectionPoligonos = document.querySelector('#poligonos'); // el .queryselector identifica clases, ids, como ilo para juntar el html con el java.
+
+        function pintarPoligonos(array, contenedor) {
+                for (let poligono of arrayPoligonos) {
+                    const div = document.createElement('div'); //<div></div>
+                    div.textContent = poligono.texto;
+                    div.style.backgroundColor = poligono.color;
+                    div.style.width = poligono.width;
+                    div.style.height = poligono.height; //<div style="">UNO</div>
+
+                    contenedor.appendChild(div) //append me permitiria agregar mas de un elemento a la vez
+                                }
+                    }
+        pintarPoligonos(arrayPoligonos,sectionPoligonos)
+
+
+
+
+
+    </script>
+</body>
+</html>

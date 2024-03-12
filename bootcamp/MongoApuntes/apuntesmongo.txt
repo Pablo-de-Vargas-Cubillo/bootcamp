@@ -1,0 +1,35 @@
+db.createCollection("nombre")
+
+->db.nombredelarray(profesores).find({especialidad:"programacion", "nombre:PedroPicapiedra"}, {nombre:1})
+ejecutar esto en consola significaría buscar, en los objetos del array mencionado, los que coincida con los requisitos.El segunco corchete "{}" puede ser de valor 0 o 1, que significa no mostrar por pantalla y mostrar por pantalla.
+-use escuela: para crear.
+-db.profesores.insertMany({ nombre : "Pepe Reina", edad : 29, alias : "Speaker"}, {nombre : "Julián Contreras", edad : 17, alias : "ErJuli" }, { nombre : "Pedro Picapiedra", edad : 27, alias : "skiper"}, {nombre : "Alfonso del Pino", edad: 34, alias : "Fonsi"})
+
+-db.alumnos.insertMany({ nombre : "Germán Menendez", edad : 49, alias : "Gerpo"}, {nombre : "Javier del Pozo", edad : 19, alias : "Xavi" })
+
+-db.distinct("edad") da los distintos valores de la edad
+
+-db.profesores.find().limit(2) muestra las dos primeros
+
+-db.profesores.find().sort({nombre:1}) ordenar por nombre
+
+-db.profesor.Update({llave y dato para diferenciar}, {$set:{especialidad:"loquequieras"}}) El $set lo que hace es añadir un objeto y el update es para actualizar información.
+
+-_id:cada elemento tiene su id
+.find{},{nombre:1, edad:1}.sort
+
+-db.profesores.find({edad:{$gte:50}},nombre:1,edad:1,ciudad:1, _id:0)
+
+-db.tienda.find({cantidad:{$in:[5,15]}}) selecciona aquellos que tengan cantidad5 o15
+-db.tienda.find({cantidad:{$nin:[5,7,9]}}) busca en el valor del campo
+
+-operadores de pertenencia:
+{$tags:},
+{$set: {venta true}}
+
+-filtros regex
+$regex es un filtro                __o"ti"
+ej:db.tienda.find(,{nombre:{$regex:"^p"}},{})
+ej:db.tienda.find(,{nombre:{$a$:"^p}})
+ej:db.tienda.find(,{nombre:{/$a$/}})
+gsongsongsongsongsongsongsongsongsongsongsongsongsongsongso

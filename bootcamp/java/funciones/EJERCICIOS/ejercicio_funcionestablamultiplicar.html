@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tablaMultiplicar(numero){
+            for (let i = 1; i <= 10; i++){
+            console.log(` ${numero} * ${i}=${numero} * ${i}`)
+            }
+            
+
+        }
+       tablaMultiplicar(7);
+
+       //funcion para pintar cuadrados
+       //la funcion recibe por parámetro el ancho, el alto y el color
+
+       function pintarCuadrado(ancho, alto, color){
+       document.write(`<div style="background-color:${color};width: ${ancho}px; height: ${alto}px;"></div>`);
+
+    }
+        function pintarCirculo(alto, ancho, color){
+        document.write(`<div style="border-radius: 50%;height:${alto}px; width:${ancho}px;background-color:${color}"></div>`)}
+
+        function pintarFigura() {
+                const ancho = prompt('Dame el ancho');
+                const alto = prompt('Dame el alto');
+                const color = prompt('Dame el color');
+                const figura = prompt('¿Qué figura quieres?');
+
+                switch (figura) {
+                    case 'cuadrado':
+                        pintarCuadrado(ancho, alto, color);
+                        break;
+                    case 'circulo':
+                        pintarCirculo(ancho, alto, color);
+                        break;
+                }
+            }
+    </script>
+</body>
+</html>

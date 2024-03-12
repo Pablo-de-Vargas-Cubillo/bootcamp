@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //array vacio
+        const letras = [];
+        const numeros = new Array();
+
+        //Array con valores__0_________1________2________3_____
+        const empleados = ['maria', 'julia', 'ines', 'victor'];
+        const pares = Array(2,4,6,8,10);
+        console.log(empleados)
+        console.log(pares)
+
+        //Longitud
+        console.log (empleados.length);
+
+        //Mayusculas y minusculas
+        conesole.log(empleados[1].toUpperCase())
+        console.log(valor.toUpperCase())
+
+        //Muestro los elementos del array empleados
+        for(let i=0; i <empleados.lengt; i++){
+            console.log(empleados[i])
+        }
+
+
+        //funcion que pinte el array de empleados dentro de una lista no ordenada en nuestro HTML
+        //-crear la función
+        //-¿Cómo recorro el Array?
+        //-Recorriendo el Array, ¿Cómo creamos la lista no ordenada?
+        /*
+
+        ul
+            <li>maria</li>
+            <li>pedro</li>
+            <li>juan</li>
+            <li>cristina</li>
+        </ul>
+        */
+    
+        //- ¿Cómo pintamos la lista en HTML?
+
+        function pintarempleados() {
+            
+            let ul= `<ul>`
+            for (let i = 0; i < empleados.length; i++){
+                ul += `<div>`
+            }
+            console.log(`</ul>`)
+        }
+            //let nombre ='mario';
+            ////nombre...
+    </script>
+</body>
+</html>

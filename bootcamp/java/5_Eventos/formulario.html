@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="Formulario">
+        <div>
+            <label for="nombre">nombre<label>
+            <input type="text" name="nombre"id="nombre" placeholder="introduce tu nombre">
+
+        </div>
+        <div>
+            <label for="edad">edad<label>
+                    <input type="number" name="edad" id="edad" placeholder="introduce tu edad">
+        
+        </div>
+        <input type ="submit" value="Enviar">
+    </form>
+    <hr>
+    <h1>Lista de contactos</h1>
+    <ul class="contactos"></ul>
+    <script>
+        
+        const formulario = document.querySelector('#Formulario')
+
+        formulario.addEventListener('submit', cargarDatos);
+        const contactos =[]
+
+        function cargarDatos(event) {
+
+            //siempre que cargueis un evento a un formulario hay que prevenir la accion por defecto.
+            event.preventDefault()
+            //capturamos la informacion del formulario
+            const nombre= event.target.nombre.value;
+            const edad = event.target.edad.value;
+
+            const nuevoContacto = {nombre:nombre,edad:edad}
+            contactos.push(nuevoContacto)
+            console.log(contactos)
+
+        }
+        
+        const ulContactos = document.querySelector('.contactos')
+        
+        function pintarContactos(lista, contenedor) {
+            for(let contacto of lista){
+                contenedor.textContent ='';
+                const li = document.createElement('li')
+                li.textContent= `${contacto.name}: ${contacto.edad}`
+                contenedor.appendChild(li)
+            }
+        }
+    </script>
+</body>
+</html>

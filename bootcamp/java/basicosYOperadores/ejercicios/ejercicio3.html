@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcularSegundos(segundos){
+        const segundos = 54321;
+
+                                    //_
+        let horas = 0;              // |
+        let minutos = 0;            // | declaramos variables con cualquier valor para mas tarde tenerlos ya nombrados
+        let segundosRestantes = 0;  //_|
+
+        horas = segundos / (60*60);
+
+        horas = Math.froor(horas);
+        
+        segundosRestantes = segundos % 3600
+
+        minutos= segundosRestantes/ 60;
+
+        minutos = Math.floor(minutos)
+
+        segundosRestantes = segundosRestantes % 60;
+       
+        }
+
+        calcularSegundos(54321)
+
+    </script>
+
+</body>
+</html>

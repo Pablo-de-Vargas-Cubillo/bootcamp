@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+                // Este apartado es imortante para la resolucione de pronlemas
+                //El try/catch sirve para gestionar los errores, y no tiene nada ue ver con las promesas.
+                //
+                //creacion de la promesa
+                function cargarNota() {
+
+                    const promesa = new Promise((resolve, reject) => {
+
+                        setTimeout(() => {
+                            const nota = Math.ceil(Math.random() * 15)
+                            if (nota >= 0 && nota < 5) {
+                                resolve('Suspenso')
+                            } else if (nota >= 5 && nota <= 10) {
+                                resolve('Aprobado')
+                            } else if (nota > 10) {
+                                reject('Nota no esperada')
+                            }
+
+                        }, 10000)
+
+                    })
+
+                    return promesa
+                }
+
+
+
+
+               //consumicion de la promesa
+
+                /*
+                    try{
+        
+                    }catch(err){
+        
+                    }
+        
+                */
+
+                async function init() {
+                    try {
+                        const miNota = await cargarNota()
+                        console.log(miNota);
+                    } catch (error){
+                        console.log(error)
+                    }
+                }
+
+                init()
+
+                //console.log('Cargando el footer, productos'); Productos se ejecuta mas tarde que footer
+
+    </script>
+
+</body>
+</html>
